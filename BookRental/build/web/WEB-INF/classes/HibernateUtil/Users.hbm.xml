@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2016 5:10:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="HibernateUtil.Users" table="users" catalog="shopsystem" optimistic-lock="version">
+        <id name="userId" type="string">
+            <column name="UserId" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="FirstName" length="30" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="LastName" length="30" />
+        </property>
+        <property name="birthday" type="date">
+            <column name="Birthday" length="10" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="200" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" length="15" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="100" />
+        </property>
+        <property name="gender" type="string">
+            <column name="Gender" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

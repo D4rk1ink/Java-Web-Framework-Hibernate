@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2016 5:10:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="HibernateUtil.Books" table="books" catalog="shopsystem" optimistic-lock="version">
+        <id name="bookId" type="java.lang.Integer">
+            <column name="BookId" />
+            <generator class="identity" />
+        </id>
+        <!--<set name="category">
+            <key column="BookId" not-null="true"/>
+            <many-to-one class="Category"/>
+        </set>-->
+        <property name="bookName" type="string">
+            <column name="BookName" length="100" not-null="true" />
+        </property>
+        <property name="categoryId" type="string">
+            <column name="CategoryId" length="10" />
+        </property>
+        <property name="note" type="string">
+            <column name="Note" length="200" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

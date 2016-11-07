@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2016 5:10:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="HibernateUtil.Chapter" table="chapter" catalog="shopsystem" optimistic-lock="version">
+        <id name="chapterId" type="java.lang.Integer">
+            <column name="ChapterId" />
+            <generator class="identity" />
+        </id>
+        <property name="bookId" type="int">
+            <column name="BookId" not-null="true" />
+        </property>
+        <property name="no" type="java.lang.Integer">
+            <column name="No" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="Price" precision="5" />
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="Quantity" />
+        </property>
+        <property name="chapterName" type="string">
+            <column name="ChapterName" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>
