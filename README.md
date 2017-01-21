@@ -1,6 +1,6 @@
 # Book Rental System
 
-Default Admin Login
+<b>Default Admin Login</b>
 <br/>Email: admin@mail.com
 <br/>Password: 123
 
