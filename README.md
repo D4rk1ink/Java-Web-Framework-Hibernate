@@ -1,4 +1,4 @@
-# Book Rental System
+# Online Book Rental System
 
 <b>Default Admin Login</b>
 <br/>Email: admin@mail.com
