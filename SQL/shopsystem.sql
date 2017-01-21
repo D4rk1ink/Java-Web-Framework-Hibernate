@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`AdminId`, `Email`, `Password`, `LastLogin`, `FirstName`, `LastName`, `Phone`) VALUES
-('1929900496795', 'passakorn_working@hotmail.com', '123', NULL, 'Passakorn', 'Rattanaprapan', '0919848364');
+('1920000000000', 'admin@mail.com', '1234', NULL, 'FirstName', 'LastName', '0900000000');
 
 -- --------------------------------------------------------
 
@@ -160,9 +160,6 @@ CREATE TABLE `rental` (
 -- Dumping data for table `rental`
 --
 
-INSERT INTO `rental` (`UserId`, `ChapterId`, `Quantity`, `DateRental`, `RentalId`, `Status`) VALUES
-('1929900496795', 1000000069, 0, '2016-11-07', 14, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -183,10 +180,6 @@ CREATE TABLE `users` (
 --
 -- Dumping data for table `users`
 --
-
-INSERT INTO `users` (`FirstName`, `LastName`, `Birthday`, `Address`, `Phone`, `Email`, `UserId`, `Gender`) VALUES
-('Passakornn', 'Rattanap', '2016-10-12', 'House No.259, Saranya Alley, Paknum Road, Rusamilae Sub-district, Mueang Pattani district, Pattani province Mueang, Pattani  94000', '919848364', 'passakorn_working@hotmail.com', '1929900496795', 'Female'),
-('Passakorn', 'Rattanaprapan', '2016-11-26', '', '', 'passakornsss_working@hotmail.com', '1929900496796', 'Male');
 
 --
 -- Indexes for dumped tables
